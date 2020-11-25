@@ -2,7 +2,32 @@
 
 
 
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /*===========================
+            Header
+============================*/
+
+    .navbar-nav .nav-item .nav-link {
+        padding-right: 40px;
+    }
+
+    /*===========================
+            About
+============================*/
+
+    .photos img.male {
+        right: 90px;
+        top: 40px;
+    }
+
+    /*===========================
+            Footer
+============================*/
+    .earphone {
+        right: -30px;
+    }
+}
 
 
 
@@ -16,10 +41,58 @@
         padding-bottom: 150px;
 
     }
+
+    /*===========================
+            About
+============================*/
+
+    .photos img.small {
+        left: 60px;
+        top: 65px;
+    }
+
+    .photos img.male {
+        right: 0;
+    }
+
+    /*===========================
+            Work
+============================*/
+
+    .work_img .price {
+        height: 100px;
+        width: 100px;
+        padding: 20px 10px;
+        right: -15px;
+    }
+
+    .work_img .price h2 {
+        font-size: 30px;
+    }
+
+    .work_img .price p {
+        font-size: 10px;
+    }
+
+    .photos img.female {
+        display: none;
+    }
+
+
+    /*===========================
+            Footer
+============================*/
+    .earphone {
+        right: -38px;
+    }
 }
 
 
 @media (max-width: 991px) {
+
+    /*===========================
+            Header
+============================*/
     .navbar {
         padding: 10px 15px;
     }
@@ -30,11 +103,45 @@
         padding-right: 0;
         text-align: center;
     }
+
+    /*===========================
+            Features
+============================*/
+
+    .features_item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*===========================
+            Footer
+============================*/
+
+    .address a.ml-30 {
+        margin-left: 0;
+    }
 }
 
 
 
 @media (max-width: 767px) {
+
+    /*==============================
+        Default
+    =============================*/
+
+    .pt-150 {
+        padding-top: 100px;
+    }
+
+    .pb-150 {
+        padding-bottom: 100px;
+    }
+
+    .pt-80 {
+        padding-top: 50px;
+    }
+
 
     /*===========================
             Banner
@@ -42,8 +149,43 @@
     #banner_section {
         padding-top: 180px;
         padding-bottom: 140px;
-
     }
+
+    .badge {
+        padding: 10px;
+        bottom: -75px;
+    }
+
+    .badge h4 {
+        font-size: 18px;
+        padding: 30px 15px;
+        border-radius: 50%;
+        border: 1px dashed #fff;
+    }
+
+
+    /*===========================
+            About
+============================*/
+
+    .photos img.small {
+        height: 100px;
+        width: 100px;
+        left: 0px;
+        top: 85px;
+    }
+
+    .photos img.male {
+        display: none;
+    }
+
+    .photos img.female {
+        height: 150px;
+        width: 150px;
+        left: 380px;
+        top: 55px;
+    }
+
 
     /*===========================
             Work
@@ -69,15 +211,37 @@
 
 
     /*==================================
+            Default 
+===================================*/
+
+    .pt-70 {
+        padding-top: 50px;
+    }
+
+
+    /*==================================
+            Banner 
+===================================*/
+
+    .button .btn {
+        padding: 10px 20px;
+    }
+
+    .banner_content h3 {
+        font-size: 24px;
+    }
+
+    .banner_content h4 {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    /*==================================
             About 
 ===================================*/
     .photos img.male {
         height: 100px;
         width: 100px;
-        border-radius: 50%;
-        border: 2px solid #fff;
-        box-shadow: 0px 0px 24px 0px rgba(75, 86, 83, 0.2);
-        position: absolute;
         right: 200px;
         top: 35px;
     }
@@ -85,10 +249,48 @@
     .photos img.female {
         display: none;
     }
-    
+
+    .photos img.small {
+        left: 0px;
+        top: 25px;
+    }
+
     .section_title h2 {
         font-size: 42px;
         line-height: 1.5;
+    }
+
+    /*==================================
+            Counter 
+===================================*/
+
+    .counter_text h2 {
+        font-size: 40px;
+    }
+
+    /*==================================
+            Work 
+===================================*/
+    .work_img .price {
+        height: 90px;
+        width: 90px;
+        padding: 15px 5px;
+        bottom: 22px;
+        right: -15px;
+    }
+
+    .work_img .price h2 {
+        font-size: 24px;
+    }
+
+    .work_img .price p {
+        font-size: 10px;
+    }
+
+    .graphics_design .work_img .price {
+        background: #0e7c9a;
+        left: -10px;
+        bottom: 90px;
     }
 
     /*==================================
@@ -99,5 +301,20 @@
         font-size: 14px;
         margin-top: 10px;
         padding: 10px;
+    }
+
+    /*==================================
+            Footer 
+===================================*/
+
+    .earphone {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -15px;
+    }
+
+    .quick_links a {
+        margin: 0 10px;
     }
 }

@@ -142,7 +142,7 @@ header {
     padding: 10px 15px;
     margin-bottom: 3px;
     border-radius: 5px;
-    line-height: 1;
+    line-height: 1.5;
 }
 
 .banner_content h5 {
@@ -201,8 +201,6 @@ header {
     color: #fff;
 
 }
-
-
 
 /*=====================================================
                     About CSS Start
@@ -284,28 +282,6 @@ header {
     color: #fff;
     background: #2c78b9;
     border: 1px solid transparent;
-}
-
-
-.social_icon {
-    padding-top: 20px;
-}
-
-.social_icon a i {
-    color: #fbc02d;
-    background: #fff;
-    font-size: 18px;
-    height: 35px;
-    width: 35px;
-    line-height: 35px;
-    text-align: center;
-    margin: 0 10px;
-}
-
-.social_icon a i:hover {
-    color: #fff;
-    background: #fbc02d;
-
 }
 
 /*=====================================================
@@ -511,13 +487,13 @@ header {
 }
 
 
-.price h4 {
+#price_section .price h4 {
     font-size: 14px;
     color: #999999;
     text-transform: capitalize;
 }
 
-.price h2 {
+#price_section .price h2 {
     font-size: 70px;
     color: #fc5b4d;
     line-height: 1;
@@ -618,6 +594,19 @@ header {
 /*=====================================================
                     Blog CSS Start
 ======================================================*/
+#blog_section {
+    overflow-x: hidden;
+}
+
+#blog_section .section_title p {
+    font-size: 14px;
+    color: #999999;
+    padding-top: 40px;
+}
+
+.blog_item {
+    padding-top: 70px;
+}
 
 
 /*=====================================================
@@ -634,7 +623,7 @@ header {
 }
 
 .test_img img {
-   max-width: 100%;
+    max-width: 100%;
     border-radius: 2px;
 }
 
@@ -676,8 +665,105 @@ header {
 
 
 /*=====================================================
-                    Banner CSS Start
+                    Footer CSS Start
 ======================================================*/
+
+#footer_section {
+    padding-top: 80px;
+    background: #2c78b9;
+}
+
+.footer_item {
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.footer_item h3 {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.footer_item p {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 35px;
+}
+
+.footer_item .address a {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-left: 25px;
+    padding-right: 30px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.footer_item .address a span {
+    color: #ffdd48;
+
+}
+
+.footer_item .address a i {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.social_icon {
+    padding-top: 20px;
+}
+
+.social_icon a i {
+    color: #fff;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.earphone {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100px;
+}
+
+.quick_links {
+    background: #333333;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.quick_links a {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: capitalize;
+
+    padding-bottom: 30px;
+    margin: 0 12px;
+}
+
+.quick_links p {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #999999;
+    text-transform: capitalize;
+}
+
+
 /*=====================================================
                     Banner CSS Start
 ======================================================*/
