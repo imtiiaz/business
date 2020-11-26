@@ -442,17 +442,25 @@ header {
 .portfolio_item:after {
     position: absolute;
     content: '';
-    border-width: 10px;
+    border-width: 0;
     border-style: solid;
     border-color: #fff #fff #439fee #439fee;
     right: 0;
     top: 0;
     z-index: 99;
-    display: none;
 }
 
 .portfolio_item:hover:after {
-    display: block;
+    border-width: 10px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -webkit-transition-delay: .3s;
+    -moz-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
 }
 
 .portfolio_item:hover .overlay {
