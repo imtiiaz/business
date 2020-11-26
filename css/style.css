@@ -329,7 +329,6 @@ header {
 }
 
 
-
 /*=====================================================
                     Work CSS Start
 ======================================================*/
@@ -435,7 +434,78 @@ header {
     background: #2c78b9;
 }
 
+.portfolio_item {
+    position: relative;
 
+}
+
+.portfolio_item:after {
+    position: absolute;
+    content: '';
+    border-width: 10px;
+    border-style: solid;
+    border-color: #fff #fff #439fee #439fee;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    display: none;
+}
+
+.portfolio_item:hover:after {
+    display: block;
+}
+
+.portfolio_item:hover .overlay {
+    transform: scale(1);
+}
+
+.overlay {
+    text-align: center;
+    background: #357dbb;
+    padding: 35px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+
+.overlay h3 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.overlay p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.overlay .button .btn {
+    font-size: 12px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 15px 20px;
+}
+
+.overlay .button .btn:hover {
+    color: #357dbb;
+    background: #fff;
+
+}
 
 
 /*=====================================================
@@ -540,6 +610,10 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     background: #fc5b4d;
+}
+
+.price_item .button .btn:hover {
+    background: #2c78b9;
 }
 
 .print .button .btn {
