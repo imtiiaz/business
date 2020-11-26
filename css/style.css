@@ -333,6 +333,22 @@ header {
                     Work CSS Start
 ======================================================*/
 
+.progress_bar {
+    width: 80%;
+    padding-top: 40px;
+}
+.progressbar {
+   background: #2c78b9;
+    margin: 0;
+}
+
+.percentCount {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .work_img {
     text-align: center;
     position: relative;
@@ -389,18 +405,20 @@ header {
     padding-left: 30px;
 }
 
-.graphics_design .inner_title h4:after {
+.mobile_app .inner_title h4:after {
     background: #0e7c9a;
 }
 
-.graphics_design .work_text {
+.mobile_app .work_text {
     padding-right: 30px;
 }
 
-.graphics_design .work_img .price {
+.mobile_app .work_img .price {
     background: #0e7c9a;
     left: -50px;
 }
+
+
 
 
 /*=====================================================
