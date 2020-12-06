@@ -39,7 +39,6 @@
     #banner_section {
         padding-top: 200px;
         padding-bottom: 150px;
-
     }
 
     /*===========================
@@ -89,6 +88,14 @@
 
 
 @media (max-width: 991px) {
+    /*===========================
+            Deafult
+============================*/
+
+    .inner_title h4 {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
 
     /*===========================
             Header
@@ -108,9 +115,8 @@
             Features
 ============================*/
 
-    .features_item {
-        padding-left: 0;
-        padding-right: 0;
+    .features_icon {
+        padding-bottom: 25px;
     }
 
     /*===========================
@@ -120,9 +126,24 @@
     .address a.ml-30 {
         margin-left: 0;
     }
+
+
+    /*===========================
+            Theme Setion
+============================*/
+
+    .features_img {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*===========================
+            How_Work Setion
+============================*/
+
+   
+
 }
-
-
 
 @media (max-width: 767px) {
 
@@ -186,6 +207,15 @@
         top: 55px;
     }
 
+    /*===========================
+            Features
+============================*/
+
+    .features_item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 
     /*===========================
             Work
@@ -202,6 +232,21 @@
     #work_section .inner_title h4:after {
         left: 50% !important;
         transform: translateX(-50%) !important;
+    }
+
+    /*===========================
+            Work
+============================*/
+    
+    .how_work_text h4 {
+        font-size: 12px;
+        padding: 10px;
+        margin-bottom: 10px;
+    } 
+    .how_work_text h3 {
+        font-size: 12px;
+        padding: 10px;
+
     }
 }
 
