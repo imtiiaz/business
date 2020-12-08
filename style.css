@@ -3,6 +3,9 @@
     margin: 0;
     outline: 0;
 }
+body {
+    overflow-x: hidden;
+}
 
 ul,
 li {
@@ -54,6 +57,37 @@ button:focus {
     outline: 0;
 }
 
+.color-1 {
+    color: #0e7c9a !important;
+}
+
+.color-2 {
+    color: #1b9bc6 !important;
+}
+
+.color-3 {
+    color: #338ac8 !important;
+}
+
+.color-4 {
+    color: #675ab3 !important;
+}
+
+.bg-1 {
+    background: #0e7c9a !important;
+}
+
+.bg-2 {
+    background: #1b9bc6 !important;
+}
+
+.bg-3 {
+    background: #338ac8 !important;
+}
+
+.bg-4 {
+    background: #675ab3 !important;
+}
 
 /*=================Common CSS End===================*/
 
@@ -160,7 +194,7 @@ header {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     background: #2c78b9;
-    padding: 20px 30px;
+    padding: 18px 30px;
     display: inline-block;
     border-radius: 5px;
     transition: all linear .3s;
@@ -302,6 +336,7 @@ header {
 .counter_text {
     text-align: center;
     padding-top: 60px;
+    position: relative;
 }
 
 .counter_text h2 {
@@ -317,6 +352,7 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     color: #fff;
+    position: absolute;
 
 }
 
@@ -332,6 +368,23 @@ header {
 /*=====================================================
                     Work CSS Start
 ======================================================*/
+
+.progress_bar {
+    width: 80%;
+    padding-top: 40px;
+}
+
+.progressbar {
+    background: #2c78b9;
+    margin: 0;
+}
+
+.percentCount {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .work_img {
     text-align: center;
@@ -389,18 +442,20 @@ header {
     padding-left: 30px;
 }
 
-.graphics_design .inner_title h4:after {
+.mobile_app .inner_title h4:after {
     background: #0e7c9a;
 }
 
-.graphics_design .work_text {
+.mobile_app .work_text {
     padding-right: 30px;
 }
 
-.graphics_design .work_img .price {
+.mobile_app .work_img .price {
     background: #0e7c9a;
     left: -50px;
 }
+
+
 
 
 /*=====================================================
@@ -434,6 +489,86 @@ header {
     background: #2c78b9;
 }
 
+.portfolio_item {
+    position: relative;
+
+}
+
+.portfolio_item:after {
+    position: absolute;
+    content: '';
+    border-width: 0;
+    border-style: solid;
+    border-color: #fff #fff #439fee #439fee;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.portfolio_item:hover:after {
+    border-width: 10px;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -webkit-transition-delay: .3s;
+    -moz-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s;
+}
+
+.portfolio_item:hover .overlay {
+    transform: scale(1);
+}
+
+.overlay {
+    text-align: center;
+    background: #357dbb;
+    padding: 35px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+}
+
+
+.overlay h3 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.overlay p {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.overlay .button .btn {
+    font-size: 12px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 15px 20px;
+}
+
+.overlay .button .btn:hover {
+    color: #357dbb;
+    background: #fff;
+
+}
 
 /*=====================================================
                     Price CSS Start
@@ -488,7 +623,6 @@ header {
 .custom h3 {
     color: #5cc99f;
 }
-
 
 #price_section .price h4 {
     font-size: 14px;
@@ -561,21 +695,26 @@ header {
 ======================================================*/
 
 .features_item {
-    padding-top: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 28px 8px rgba(0, 0, 0, 0.09);
 }
 
 .features_icon {
     text-align: center;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
 }
 
 .features_icon i {
     font-size: 28px;
-    height: 80px;
-    width: 80px;
-    line-height: 80px;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
     text-align: center;
     color: #fff;
     background: #279bc4;
@@ -596,11 +735,10 @@ header {
 }
 
 
-
-
 /*=====================================================
                     Blog CSS Start
 ======================================================*/
+
 #blog_section {
     overflow-x: hidden;
 }
@@ -771,9 +909,310 @@ header {
 }
 
 
+
+
 /*=====================================================
-                    Banner CSS Start
+                     Page Title CSS Start
 ======================================================*/
+#page_title {
+    background: url(../images/page-title/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    padding-bottom: 140px;
+}
+
+#page_title .section_title {
+    text-align: center;
+}
+
+#page_title .section_title h2 {
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    background: #121212;
+}
+
+#page_title .section_title span {
+    color: #fff;
+}
+
+#page_title .section_title h4 {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+
 /*=====================================================
-                    Banner CSS Start
+Services Page CSS Start
+======================================================*/
+
+#services_page .features_icon {
+    border-radius: 5px;
+}
+
+#services_page .features_icon i {
+    background: none;
+}
+
+#services_page .section_title p {
+    font-size: 14px;
+    color: #999999;
+}
+
+#services_page.inner_title h4 {
+    position: relative;
+
+}
+
+#services_page.inner_title h4:after {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2c78b9;
+}
+
+.device {
+    padding-top: 120px;
+    position: relative;
+}
+
+.device .badge {
+    position: absolute;
+    right: 200px;
+    top: 200px;
+    bottom: inherit;
+    left: inherit;
+    transform: rotate(-30deg)
+}
+
+.device .badge h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 25px 10px;
+    border-radius: 50%;
+    border: 1px dashed #fff;
+}
+
+/*================Theme section CSS Start==============*/
+
+#theme_section {
+    padding: 120px 0;
+}
+
+#theme_section h2 {
+    padding-bottom: 40px;
+}
+
+.section_title p {
+    font-size: 14px;
+    color: #999999;
+}
+
+.features_text p {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.features_text p:first-child {
+    text-transform: capitalize;
+    color: #fff;
+    border-radius: 5px;
+    background: #2c78b9;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.features_text h3 {
+    font-size: 20px;
+    color: #000000;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.features_text .btn {
+    font-size: 12px;
+    padding: 15px 30px;
+}
+
+.features_text .btn:hover {
+    border: 1px solid #2c78b9;
+}
+
+/*===========================
+           Small banner
+============================*/
+#small_banner {
+    background: url(../images/banner/small-banner-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 230px;
+    padding-bottom: 110px;
+}
+
+#small_banner .section_title h2 {
+    color: #373737;
+    font-weight: 700;
+}
+
+#small_banner .section_title h2 span {
+    font-weight: 400;
+    color: #373737;
+}
+
+#small_banner .section_title h4 {
+    font-size: 14px;
+    color: #373737;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    line-height: 1.5;
+}
+
+#small_banner .btn {
+    font-size: 12px;
+    padding: 15px 30px;
+    margin: 5px;
+}
+
+#small_banner .btn:hover {
+    background: #383838;
+    color: #fff;
+}
+
+#small_banner .btn.active {
+    background: #383838;
+    color: #fff;
+}
+
+/*===========================
+        How Work CSS Start
+============================*/
+
+#how_work {
+    padding: 120px 0;
+}
+
+
+#how_work .features_item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#how_work .features_icon {
+    transform: rotate(-45deg);
+    font-size: 28px;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    background: #279bc4;
+    border-radius: 10px;
+}
+
+#how_work .features_icon i {
+    transform: rotate(45deg);
+    background: none;
+}
+
+#how_work .inner_title h4 {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+
+#how_work .inner_title h4:after {
+    content: none;
+}
+
+#how_work .inner_title h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+.how_work_img {
+    margin-top: 100px;
+    position: relative;
+}
+
+.how_work_text {
+    position: absolute;
+    top: 50%;
+    right: 200px;
+}
+
+.how_work_text h4 {
+    font-size: 16px;
+    color: #fff;
+    background: #675ab3;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/*
+.how_work_text h4:after {
+    position: absolute;
+    content: '';
+    border-width: 0;
+    border-style: solid;
+    border-color: #fff #fff #439fee #439fee;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+*/
+
+.how_work_text h3 {
+    font-size: 16px;
+    color: #fff;
+    background: #1b9bc6;
+    padding: 12px 20px;
+    display: inline-block;
+    position: relative;
+}
+
+/*
+.how_work_text h3:after {
+    position: absolute;
+    content: '';
+    border-width: 0;
+    border-style: solid;
+    border-color: #000 #000 #000 #000;
+    right: 0;
+    top: 0;
+    z-index: 99;
+}
+*/
+
+/*=====================================================
+                    Services Page CSS Start
+======================================================*/
+
+
+/*=====================================================
+                    Services Page CSS Start
+======================================================*/
+
+/*=====================================================
+                    Services Page CSS Start
 ======================================================*/
