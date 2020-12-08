@@ -115,9 +115,11 @@
             Features
 ============================*/
 
+    /*
     .features_icon {
         padding-bottom: 25px;
     }
+*/
 
     /*===========================
             Footer
@@ -141,7 +143,7 @@
             How_Work Setion
 ============================*/
 
-   
+
 
 }
 
@@ -237,16 +239,57 @@
     /*===========================
             Work
 ============================*/
-    
+    .price_title h3 {
+        font-size: 17px;
+        padding-bottom: 25px;
+    }
+
+    #price_section .price h2 {
+        padding-bottom: 25px;
+    }
+
+    .feature ul li {
+        padding-bottom: 15px;
+    }
+
+    /*===========================
+            Work
+============================*/
+
     .how_work_text h4 {
         font-size: 12px;
         padding: 10px;
         margin-bottom: 10px;
-    } 
+    }
+
     .how_work_text h3 {
         font-size: 12px;
         padding: 10px;
 
+    }
+
+    /*===========================
+            Footer
+============================*/
+    .earphone {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -15px;
+    }
+
+    /*===========================
+            Services Page
+============================*/
+
+    #page_title {
+        padding-top: 160px;
+        padding-bottom: 100px;
+    }
+
+    #small_banner {
+        padding-top: 100px;
+        padding-bottom: 80px;
     }
 }
 
@@ -301,8 +344,8 @@
     }
 
     .section_title h2 {
-        font-size: 42px;
-        line-height: 1.5;
+        font-size: 36px;
+        line-height: 1.3;
     }
 
     /*==================================
@@ -352,14 +395,103 @@
             Footer 
 ===================================*/
 
-    .earphone {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: -15px;
-    }
 
     .quick_links a {
         margin: 0 10px;
+    }
+
+    /*==================================
+            Serices Page 
+===================================*/
+
+    #page_title {
+        padding-top: 120px;
+        padding-bottom: 50px;
+    }
+
+    #page_title .section_title h4 {
+        font-size: 14px;
+        color: #fff;
+        line-height: 1.6;
+        padding-top: 15px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #services_page.pt-100 {
+        padding-top: 60px;
+    }
+
+    #services_page .pb-40 {
+        padding-bottom: 0 !important;
+    }
+
+    #services_page .device {
+        padding-top: 60px;
+    }
+
+    .device .badge {
+        right: 15px;
+        top: 20px;
+    }
+
+    .device .badge h4 {
+        font-size: 13px;
+        padding: 21px 10px;
+    }
+
+    .badge span {
+        font-size: 10px;
+    }
+
+    .section_title img {
+        padding: 15px 0 15px;
+    }
+
+    #price_section .section_title p {
+        padding-top: 30px;
+    }
+
+    #price_section .section_title {
+        padding: 0;
+    }
+
+    #theme_section {
+        padding: 60px 0;
+    }
+
+    #theme_section h2 {
+        padding-bottom: 20px;
+    }
+
+    #small_banner {
+        padding-top: 70px;
+        padding-bottom: 60px;
+    }
+
+    #how_work {
+        padding: 70px 0;
+    }
+
+    .how_work_img {
+        margin-top: 50px;
+    }
+
+    .how_work_text {
+        top: 50%;
+        right: 10px;
+    }
+
+    .social_icon {
+        padding: 0;
+        text-align: center;
+    }
+
+    #footer_section {
+        padding-top: 50px;
+    }
+
+    .footer_item {
+        padding-bottom: 50px;
     }
 }
