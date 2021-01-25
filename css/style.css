@@ -1,28 +1,75 @@
-* {
-    padding: 0;
-    margin: 0;
-    outline: 0;
-}
-body {
-    overflow-x: hidden;
+/*-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+	*. Pre Loader
+    1. Template default css
+    2. Header Section
+    3. Banner Section
+    4. About Section 
+    5. Services Section
+    6. Team Section
+    7. Counter Section
+    8. Service Section 
+    8. Testimonial Section 
+    10. News Section
+    11. CTA Section
+    12. Client Section
+    13. Footer Section
+    
+    
+-----------------------------------------------------------------------------------*/
+/* *.---------------------------------------------
+               Pre Loader
+------------------------------------------------*/
+#loader {
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
 }
 
-ul,
-li {
-    list-style: none;
+#loader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 1.---------------------------------------------
+                Template default css
+------------------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Barlow', sans-serif;
 }
 
 img {
-    vertical-align: middle;
     display: inline-block;
+    vertical-align: middle;
 }
 
-p {
-    font-family: 'Open Sans', sans-serif;
+a {
+    text-decoration: none;
+    display: inline-block;
+    outline: 0;
 }
 
-p,
-a,
+a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -30,19 +77,18 @@ h4,
 h5,
 h6,
 ul,
+ol,
 li,
-ol {
-    padding: 0;
-    margin: 0;
-}
-
+p,
 a {
-    text-decoration: none;
-    display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 
-a:hover {
-    text-decoration: none;
+p {
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+    color: #595866;
 }
 
 .btn.focus,
@@ -53,82 +99,149 @@ a:hover {
 }
 
 button:focus {
-    border: 0;
     outline: 0;
 }
 
-.color-1 {
-    color: #0e7c9a !important;
+.form-control:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
 }
 
-.color-2 {
-    color: #1b9bc6 !important;
+.overflow {
+    overflow-x: hidden;
 }
 
-.color-3 {
-    color: #338ac8 !important;
+::-webkit-input-placeholder {
+    text-transform: capitalize;
 }
 
-.color-4 {
-    color: #675ab3 !important;
+::-moz-placeholder {
+    text-transform: capitalize;
 }
 
-.bg-1 {
-    background: #0e7c9a !important;
+:-ms-input-placeholder {
+    text-transform: capitalize;
 }
 
-.bg-2 {
-    background: #1b9bc6 !important;
+:-moz-placeholder {
+    text-transform: capitalize;
 }
 
-.bg-3 {
-    background: #338ac8 !important;
+/* 2.-------------------------------------------
+                    Header Section
+-----------------------------------------------*/
+
+.header_top {
+    background: #222629;
 }
 
-.bg-4 {
-    background: #675ab3 !important;
+.header_info a {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
 }
 
-/*=================Common CSS End===================*/
+.header_info a i {
+    margin-right: 7px;
+}
 
+.social_icon ul {
+    display: inline-block;
+}
 
+.social_icon ul li {
+    display: inline-block;
+}
 
-/*=====================================================
-                    Header CSS Start
-======================================================*/
+.social_icon ul li a {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 10px;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -os-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+}
 
-header {
-    background-color: #ffffff;
-    box-shadow: 0px 3px 5px 0px rgba(84, 97, 96, 0.04);
-    position: absolute;
+.social_icon ul li a:hover {
+    color: #0a88ff;
+}
+
+.header_button {
+    display: inline-block;
+}
+
+.header_button .btn {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 40px;
+    margin-left: 20px;
+    background: #0a88ff;
+    border-radius: 0;
+    transition: all linear .2s;
+    -webkit-transition: all linear .2s;
+    -moz-transition: all linear .2s;
+    -os-transition: all linear .2s;
+    -ms-transition: all linear .2s;
+}
+
+.header_button .btn:hover {
+    color: #0a88ff;
+    background: #fff;
+}
+
+.main_menu {
+    background: #fff;
+    box-shadow: 0 0 100px 10px rgba(34, 34, 34, 0.10);
+}
+
+.menu_fix {
+    background: rgba(0, 22, 89, 0.8);
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    transition: all linear .5s;
+    z-index: 9999;
 }
 
-.navbar-toggler {
-    margin: 5px 0;
+.menu_fix .navbar-toggler i {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.menu_fix .navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    padding: 20px 0;
 }
 
 .navbar-toggler i {
-    color: #2c78b9;
-    padding: 5px 10px;
-    border: 1px solid #2c78b9;
+    color: #001659;
+    border: 1px solid #001659;
     border-radius: 5px;
+    padding: 5px 10px;
 }
 
-.navbar-nav .nav-item .nav-link {
 
-    font-size: 14px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+.navbar-nav .nav-item .nav-link {
+    color: #001659;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 40px 20px;
     text-transform: uppercase;
-    color: #212121;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 0;
-    padding-right: 45px;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -136,67 +249,58 @@ header {
     -ms-transition: all linear .3s;
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-    color: #2c78b9;
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active {
+    color: #0a88ff;
 }
 
 
-/*=====================================================
-                    Banner CSS Start
-======================================================*/
 
+/* 3.-------------------------------------------
+                    Banner Section
+-----------------------------------------------*/
 
 #banner_section {
-    background: url(../images/banner/banner-1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 325px;
-    padding-bottom: 300px;
+    background-color: #f0f3f8;
     position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-.banner_content h3 {
-    font-size: 28px;
-    color: #fff;
-    background: #020202;
-    display: inline-block;
-    padding: 10px 15px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    line-height: 1;
-    text-transform: capitalize;
+.banner_shape img {
+    max-height: 370px;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.banner_content h4 {
-    font-size: 20px;
-    color: #020202;
-    background: #ffff;
-    display: inline-block;
-    padding: 10px 15px;
-    margin-bottom: 3px;
-    border-radius: 5px;
-    line-height: 1.5;
+
+.banner_content {
+    padding: 100px 0 90px;
 }
 
-.banner_content h5 {
-    font-size: 22px;
-    text-transform: capitalize;
-    font-weight: 400;
+.banner_content .section_title h4 {
+    padding-left: 70px;
+}
+
+.banner_content .section_title h4:after {
+    left: 0;
 }
 
 .button .btn {
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
     color: #fff;
-    background: #2c78b9;
-    padding: 18px 30px;
-    display: inline-block;
+    background: #0a88ff;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    border: 1px solid #0a88ff;
     border-radius: 5px;
+    padding: 12px 60px 12px 20px;
+    margin-right: 15px;
+    margin-top: 20px;
+    position: relative;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -204,1015 +308,879 @@ header {
     -ms-transition: all linear .3s;
 }
 
-.button .btn:hover {
-    color: #2c78b9;
+.button .btn:nth-child(2) {
+    color: #0a88ff;
     background: #fff;
-
 }
 
-.badge {
-    background-color: rgba(44, 120, 185, 0.8);
-    padding: 12px;
-    border-radius: 50%;
-    border: 2px solid #fff;
+.button .btn:hover {
+    color: #0a88ff;
+    background: #fff;
+}
+
+.button .btn i {
     position: absolute;
-    bottom: -102px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
-.badge h4 {
-    font-size: 22px;
-    color: #fff;
-    text-transform: capitalize;
-    padding: 50px 30px;
+.banner_img {
+    position: relative;
+    z-index: 1;
+}
+
+
+.banner_img img:first-child {
     border-radius: 50%;
-    border: 1px dashed #fff;
 }
 
-.badge span {
-    font-size: 14px;
-    color: #fff;
+.banner_img img:nth-child(2) {
+    position: absolute;
+    right: -142px;
+    bottom: -281px;
+    z-index: -1;
+}
+
+.banner_img img:nth-child(3) {
+    position: absolute;
+    right: -20px;
+    bottom: 61px;
+    z-index: -1;
+}
+
+
+@media screen and (max-width:1199px) {
+
+    .banner_img img:nth-child(3) {
+        right: -20px;
+        bottom: 21px;
+    }
 
 }
 
-/*=====================================================
-                    About CSS Start
-======================================================*/
+@media screen and (max-width:575px) {
+    .banner_shape img {
+        display: none;
+    }
 
+    .section_title h1 {
+        font-size: 50px;
+
+    }
+}
+
+
+/* 4.-------------------------------------------
+                    About Section
+-----------------------------------------------*/
+
+#about_section {
+    padding: 60px 0 100px;
+}
 
 .about_img {
     position: relative;
 }
 
-.photos img.female {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    box-shadow: 0px 0px 24px 0px rgba(75, 86, 83, 0.2);
+.about_img img:nth-child(2) {
     position: absolute;
-    left: 220px;
-    top: 70px;
-    z-index: 999;
+    right: 0;
+    top: 200px
 }
 
-.photos img.male {
-    height: 230px;
-    width: 230px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    box-shadow: 0px 0px 24px 0px rgba(75, 86, 83, 0.2);
+.about_img img:nth-child(3) {
     position: absolute;
-    right: 160px;
-    top: 25px;
+    left: -84px;
+    top: 242px;
+    max-height: 500px;
 }
 
-.photos img.small {
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    box-shadow: 0px 0px 24px 0px rgba(75, 86, 83, 0.2);
-    position: absolute;
-    left: 140px;
-    top: 15px;
-}
-
-
-.short_description h5 {
-    font-size: 16px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.short_description p {
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    color: #777777;
-    padding-top: 20px;
-}
-
-.about_item {
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 50px;
-    box-shadow: 0px 0px 28px 8px rgba(0, 0, 0, 0.09)
-}
-
-.inner_title p {
-    font-size: 14px;
-    color: #999999;
-
-}
-
-.about_item .btn {
-    font-size: 12px;
-    color: #2c78b9;
-    background: transparent;
-    border: 1px solid #2c78b9;
-    padding: 10px 15px;
-}
-
-.about_item .btn:hover {
-    color: #fff;
-    background: #2c78b9;
-    border: 1px solid transparent;
-}
-
-/*=====================================================
-                    Counter CSS Start
-======================================================*/
-
-#counter_section {
-    background: #2c78b9;
-    padding-bottom: 60px;
-}
-
-.counter_text {
-    text-align: center;
-    padding-top: 60px;
-    position: relative;
-}
-
-.counter_text h2 {
-    font-size: 48px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    color: #fff;
-    display: inline-block;
-}
-
-.counter_text span {
-    font-size: 36px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    color: #fff;
-    position: absolute;
-
-}
-
-.counter_text h5 {
-    font-size: 14px;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    padding-top: 15px;
-}
-
-
-/*=====================================================
-                    Work CSS Start
-======================================================*/
-
-.progress_bar {
-    width: 80%;
-    padding-top: 40px;
-}
-
-.progressbar {
-    background: #2c78b9;
-    margin: 0;
-}
-
-.percentCount {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.work_img {
-    text-align: center;
-    position: relative;
-}
-
-.work_img .pen_holder {
-    position: absolute;
-    top: 50%;
-    left: -40px;
-    transform: translateY(-50%);
-}
-
-.work_img .price {
-    background: #2c78b9;
-    height: 130px;
-    width: 130px;
-    padding: 25px 10px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 30px;
-    right: 10px;
-}
-
-.work_img .price p {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 500;
-
-}
-
-.work_img .price h2 {
-    font-size: 40px;
-    color: #fff;
-    font-weight: 700;
-}
-
-.work_img .price h2 span {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 700;
-}
-
-#work_section .inner_title {
-    text-align: left;
-}
-
-#work_section .inner_title h4:after {
-    left: 0 !important;
-    transform: translateX(0) !important;
-}
-
-.web_design .work_text {
+.about_text {
     padding-left: 30px;
 }
 
-.mobile_app .inner_title h4:after {
-    background: #0e7c9a;
-}
-
-.mobile_app .work_text {
-    padding-right: 30px;
-}
-
-.mobile_app .work_img .price {
-    background: #0e7c9a;
-    left: -50px;
-}
-
-
-
-
-/*=====================================================
-                    Porfolio CSS Start
-======================================================*/
-
-.portfolio_list ul li {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #777777;
-    display: inline-block;
-    padding: 20px;
-    margin: 5px 2px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -os-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-}
-
-.portfolio_list ul li.mixitup-control-active {
-    color: #fff;
-    background: #2c78b9;
-}
-
-.portfolio_list ul li:hover {
-    color: #fff;
-    background: #2c78b9;
-}
-
-.portfolio_item {
+.about_text ul li {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #14212B;
+    padding-left: 70px;
+    margin-top: 30px;
     position: relative;
-
 }
 
-.portfolio_item:after {
+.about_text ul li p {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #595866;
+    padding-top: 10px;
+}
+
+.about_text ul li span {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 1px solid #0a88ff;
+}
+
+.play_button {
+    position: absolute;
+    top: 64%;
+    transform: translateY(-60%);
+    left: 162px;
+}
+
+.play_button .btn i {
+    font-size: 30px;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #0a88ff;
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .about_img img:nth-child(1) {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    .about_img img:nth-child(2) {
+        top: 100px;
+    }
+
+    .about_text {
+        padding-left: 0;
+        padding-top: 70px;
+    }
+
+    .about_img img:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    #about_section {
+        padding: 10px 0 60px;
+    }
+
+    .about_img img:nth-child(2) {
+        display: none;
+    }
+
+    .play_button {
+        top: 50%;
+        transform: translate(-50%);
+        left: 50%;
+    }
+}
+
+
+
+/* 5.-------------------------------------------
+                    Services Section
+-----------------------------------------------*/
+
+#services_section {
+    background: url(../images/services/services-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0 220px;
+    margin-bottom: 400px;
+    position: relative;
+    z-index: 111;
+}
+
+#services_section:after {
     position: absolute;
     content: '';
-    border-width: 0;
-    border-style: solid;
-    border-color: #fff #fff #439fee #439fee;
-    right: 0;
-    top: 0;
-    z-index: 99;
-}
-
-.portfolio_item:hover:after {
-    border-width: 10px;
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -os-transition: all linear .3s;
-    -ms-transition: all linear .3s;
-    -webkit-transition-delay: .3s;
-    -moz-transition-delay: .3s;
-    -o-transition-delay: .3s;
-    transition-delay: .3s;
-}
-
-.portfolio_item:hover .overlay {
-    transform: scale(1);
-}
-
-.overlay {
-    text-align: center;
-    background: #357dbb;
-    padding: 35px 25px;
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    transform: scale(0);
-    transition: all linear .3s;
-    -webkit-transition: all linear .3s;
-    -moz-transition: all linear .3s;
-    -os-transition: all linear .3s;
-    -ms-transition: all linear .3s;
+    background: rgba(20, 33, 43, 0.65);
+    z-index: -1;
 }
 
-
-.overlay h3 {
-    font-size: 16px;
+#services_section .section_title h4 {
+    padding-left: 0;
     color: #fff;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
 }
 
-.overlay p {
-    font-size: 14px;
-    color: #fff;
-    font-weight: 400;
-    padding-top: 20px;
-    padding-bottom: 25px;
-}
-
-.overlay .button .btn {
-    font-size: 12px;
-    color: #fff;
-    background: transparent;
-    border: 1px solid #fff;
-    padding: 15px 20px;
-}
-
-.overlay .button .btn:hover {
-    color: #357dbb;
+#services_section .section_title h4:after {
+    left: -60px;
     background: #fff;
-
 }
 
-/*=====================================================
-                    Price CSS Start
-======================================================*/
-
-#price_section {
-    background: #0e7c9a;
-}
-
-
-#price_section .section_title h2 {
-    color: #fff;
-}
-
-#price_section .section_title h2 span {
-    color: #fff;
-}
-
-#price_section .section_title h4 {
-    color: #fff;
-}
-
-#price_section .section_title p {
-    color: #fff;
-    font-size: 14px;
-    padding-top: 40px;
-}
-
-.price_item {
-    text-align: center;
+#services_section .section_title h4:before {
+    position: absolute;
+    content: '';
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 1px;
     background: #fff;
-    padding: 30px 40px 40px;
+}
+
+#services_section .section_title h2 {
+    color: #fff;
+}
+
+.services_content {
+    position: absolute;
+    bottom: -280px;
+    left: 0;
+    right: 0;
+}
+
+.services_item {
     margin-top: 60px;
+    background: #fff;
+    box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.05);
 }
 
-.price_title h3 {
-    font-size: 18px;
-    color: #fc5b4d;
-    font-family: 'Montserrat', sans-serif;
-    padding-bottom: 50px;
-    text-transform: capitalize;
+.services_item .box {
+    padding: 20px 30px 25px;
 }
 
-.print h3 {
-    color: #fea63e;
+.services_item .icon,
+.services_item .text {
+    display: table-cell;
+    vertical-align: top;
 }
 
-.branding h3 {
-    color: #aecb6a;
-}
-
-.custom h3 {
-    color: #5cc99f;
-}
-
-#price_section .price h4 {
-    font-size: 14px;
-    color: #999999;
-    text-transform: capitalize;
-}
-
-#price_section .price h2 {
-    font-size: 70px;
-    color: #fc5b4d;
-    line-height: 1;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    padding-bottom: 50px;
-}
-
-.print h2 {
-    color: #fea63e;
-}
-
-.branding h2 {
-    color: #aecb6a;
-}
-
-.custom h2 {
-    color: #5cc99f;
-}
-
-.price h2 span {
-    font-size: 40px;
-    font-weight: 100;
-}
-
-.feature ul li {
-    font-size: 14px;
-    color: #999999;
-    padding-bottom: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-}
-
-.price_item .button .btn {
-    font-size: 12px;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    background: #fc5b4d;
-}
-
-.price_item .button .btn:hover {
-    background: #2c78b9;
-}
-
-.print .button .btn {
-    background: #fea63e;
-}
-
-.branding .button .btn {
-    background: #aecb6a;
-}
-
-.custom .button .btn {
-    background: #5cc99f;
-}
-
-
-/*=====================================================
-                    Features CSS Start
-======================================================*/
-
-.features_item {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 20px;
+.services_item .icon i {
     padding-right: 20px;
-    margin-top: 50px;
-    box-shadow: 0px 0px 28px 8px rgba(0, 0, 0, 0.09);
+    font-size: 50px;
+    color: #0a88ff;
 }
 
-.features_icon {
-    text-align: center;
-    margin-bottom: 30px;
-    display: inline-block;
-}
-
-.features_icon i {
-    font-size: 28px;
-    height: 70px;
-    width: 70px;
-    line-height: 70px;
-    text-align: center;
-    color: #fff;
-    background: #279bc4;
-    border-radius: 5px;
-}
-
-#features_section .inner_title {
-    text-align: center;
-}
-
-#features_section .inner_title h4 {
-    margin-bottom: 0;
-    padding-bottom: 20px;
-}
-
-#features_section .inner_title h4:after {
-    content: none;
-}
-
-
-/*=====================================================
-                    Blog CSS Start
-======================================================*/
-
-#blog_section {
-    overflow-x: hidden;
-}
-
-#blog_section .section_title p {
-    font-size: 14px;
-    color: #999999;
-    padding-top: 40px;
-}
-
-.blog_item {
-    padding-top: 70px;
-}
-
-
-/*=====================================================
-                    Clients CSS Start
-======================================================*/
-
-.clients_item {
-    text-align: center;
-    padding-bottom: 40px;
-}
-
-.test_img {
-    text-align: center;
-}
-
-.test_img img {
-    max-width: 100%;
-    border-radius: 2px;
-}
-
-.test_text h4 {
-    font-size: 14px;
-    color: #555555;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+.text h3 {
+    font-size: 22px;
     text-transform: capitalize;
-    padding-left: 10px;
+    font-weight: 700;
 }
 
-.test_text h4 a {
-    font-size: 14px;
-    color: #2c78b9;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: lowercase;
+.text p {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 0 10px;
+}
+
+.services_item .text a {
+    font-size: 16px;
+    color: #0a88ff;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.services_item .text a:hover {
+    text-decoration: underline;
+}
+
+.services_item .text a i {
+    font-size: 12px;
+    color: #0a88ff;
+    text-transform: capitalize;
     margin-left: 2px;
 }
 
-.test_text h4:after {
+@media screen and (max-width:991px) {
+
+    #services_section {
+        background: #F5FBFF;
+        padding: 100px 0;
+        margin-bottom: 0;
+    }
+
+    #services_section:after {
+        content: none;
+    }
+
+    #services_section .section_title h4 {
+        color: #333;
+    }
+
+    #services_section .section_title h4:before,
+    #services_section .section_title h4:after {
+        background: #0a88ff;
+    }
+
+    #services_section .section_title h2 {
+        color: #333;
+    }
+
+
+    .services_content {
+        position: static;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .services_item .box {
+        padding: 30px 20px 30px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .services_item .box {
+        text-align: center;
+        padding: 20px 15px 20px;
+    }
+
+    .services_item .icon,
+    .services_item .text {
+        display: block;
+    }
+
+    .services_item .icon i {
+        font-size: 40px;
+        padding-right: 0;
+        padding-bottom: 5px;
+    }
+
+    .text h3 {
+        font-size: 20px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    .services_item .text a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    #services_section {
+        padding: 60px 0;
+    }
+}
+
+/* 6.-------------------------------------------
+                    Work Section
+-----------------------------------------------*/
+
+#work_section {
+    background: #f0f3f8;
+    padding: 100px 0;
+}
+
+#work_section .section_title h4 {
+    padding-left: 0;
+}
+
+#work_section .section_title h4:after {
+    left: -60px;
+}
+
+#work_section .section_title h4:before {
     position: absolute;
-    content: '“';
-    left: 0;
-    top: -7px;
-    font-size: 25px;
-    font-weight: 700;
-}
-
-.test_text h3 {
-    font-size: 14px;
-    color: #999999;
-    font-style: italic;
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #aecb6a;
-    line-height: 1.6;
-}
-
-
-/*=====================================================
-                    Footer CSS Start
-======================================================*/
-
-#footer_section {
-    padding-top: 80px;
-    background: #2c78b9;
-}
-
-.footer_item {
-    padding-bottom: 80px;
-    position: relative;
-}
-
-.footer_item h3 {
-    font-size: 20px;
-    color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-.footer_item p {
-    font-size: 14px;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    padding-top: 20px;
-    padding-bottom: 35px;
-}
-
-.footer_item .address a {
-    font-size: 14px;
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    padding-left: 25px;
-    padding-right: 30px;
-    margin-bottom: 25px;
-    position: relative;
-}
-
-.footer_item .address a span {
-    color: #ffdd48;
-
-}
-
-.footer_item .address a i {
-    font-size: 20px;
-    color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.social_icon {
-    padding-top: 20px;
-}
-
-.social_icon a i {
-    color: #fff;
-    font-size: 18px;
-    line-height: 35px;
-    text-align: center;
-    margin-right: 15px;
-}
-
-.earphone {
-    position: absolute;
+    content: '';
+    right: -60px;
     top: 50%;
     transform: translateY(-50%);
-    right: -100px;
+    width: 50px;
+    height: 1px;
+    background: #0a88ff;
 }
 
-.quick_links {
-    background: #333333;
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-
-.quick_links a {
-    font-size: 14px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    text-transform: capitalize;
-
-    padding-bottom: 30px;
-    margin: 0 12px;
-}
-
-.quick_links p {
-    font-size: 14px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
-    color: #999999;
-    text-transform: capitalize;
-}
-
-
-
-
-/*=====================================================
-                     Page Title CSS Start
-======================================================*/
-#page_title {
-    background: url(../images/page-title/bg.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 250px;
-    padding-bottom: 140px;
-}
-
-#page_title .section_title {
+.work_item {
     text-align: center;
-}
-
-#page_title .section_title h2 {
-    color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    background: #121212;
-}
-
-#page_title .section_title span {
-    color: #fff;
-}
-
-#page_title .section_title h4 {
-    font-size: 16px;
-    color: #fff;
-    line-height: 1.5;
-    padding-top: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-
-
-/*=====================================================
-Services Page CSS Start
-======================================================*/
-
-#services_page .features_icon {
-    border-radius: 5px;
-}
-
-#services_page .features_icon i {
-    background: none;
-}
-
-#services_page .section_title p {
-    font-size: 14px;
-    color: #999999;
-}
-
-#services_page.inner_title h4 {
     position: relative;
-
+    margin-top: 70px;
 }
 
-#services_page.inner_title h4:after {
+.work_item h2 {
     position: absolute;
-    content: '';
-    width: 70px;
-    height: 2px;
-    bottom: 0;
+    top: -45px;
     left: 50%;
     transform: translateX(-50%);
-    background: #2c78b9;
+    font-size: 70px;
+    font-weight: 700;
+    color: #d9e9f9;
+    line-height: 1;
+    padding-bottom: 15px;
 }
 
-.device {
-    padding-top: 120px;
+.work_item .icon {
     position: relative;
 }
 
-.device .badge {
-    position: absolute;
-    right: 200px;
-    top: 200px;
-    bottom: inherit;
-    left: inherit;
-    transform: rotate(-30deg)
-}
-
-.device .badge h4 {
-    font-size: 18px;
-    color: #fff;
-    text-transform: capitalize;
-    padding: 25px 10px;
+.work_item .icon i {
+    font-size: 35px;
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
     border-radius: 50%;
-    border: 1px dashed #fff;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #fff;
+    background: #0a88ff;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    z-index: 999;
 }
 
-/*================Theme section CSS Start==============*/
-
-#theme_section {
-    padding: 120px 0;
+.work_item:hover .icon i {
+    color: #0a88ff;
+    background: #fff;
 }
 
-#theme_section h2 {
+@media screen and (max-width:575px) {
+    #work_section {
+        padding: 60px 0;
+    }
+}
+
+/* 7.-------------------------------------------
+                    Portfolio Section
+-----------------------------------------------*/
+
+#portfolio_section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#portfolio_section .section_title h4 {
+    padding-left: 0;
+}
+
+#portfolio_section .section_title h4:after {
+    left: -60px;
+}
+
+
+#portfolio_section .section_title h4:before {
+    position: absolute;
+    content: '';
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 1px;
+    background: #0a88ff;
+}
+
+.portfolio_item img {
+    border-radius: 5px;
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+
+.portfolio_list {
     padding-bottom: 40px;
 }
 
-.section_title p {
-    font-size: 14px;
-    color: #999999;
-}
-
-.features_text p {
-    color: #999999;
-    font-size: 14px;
-    font-weight: 500;
-    padding-bottom: 20px;
-}
-
-.features_text p:first-child {
+.portfolio_list ul li {
     text-transform: capitalize;
-    color: #fff;
-    border-radius: 5px;
-    background: #2c78b9;
-    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
     display: inline-block;
+    margin: 15px 10px 0;
+    cursor: pointer;
+    position: relative;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -os-transition: all linear .3s;
+    -ms-transition: all linear .3s;
 }
 
-.features_text h3 {
-    font-size: 20px;
-    color: #000000;
-    line-height: 1;
-    font-weight: 500;
-    text-transform: capitalize;
-    padding-top: 15px;
-    padding-bottom: 30px;
+.portfolio_list ul li:after {
+    position: absolute;
+    content: '';
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #0a88ff;
 }
 
-.features_text .btn {
-    font-size: 12px;
-    padding: 15px 30px;
+.portfolio_list ul li.mixitup-control-active:after {
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #0a88ff;
 }
 
-.features_text .btn:hover {
-    border: 1px solid #2c78b9;
+@media screen and (max-width:575px) {
+    #portfolio_section {
+        padding: 60px 0;
+    }
 }
 
-/*===========================
-           Small banner
-============================*/
-#small_banner {
-    background: url(../images/banner/small-banner-1.png);
+/* 8.-------------------------------------------
+                    Client Section
+-----------------------------------------------*/
+
+#client_section {
+    background: url(../images/client/4map.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 230px;
-    padding-bottom: 110px;
-}
-
-#small_banner .section_title h2 {
-    color: #373737;
-    font-weight: 700;
-}
-
-#small_banner .section_title h2 span {
-    font-weight: 400;
-    color: #373737;
-}
-
-#small_banner .section_title h4 {
-    font-size: 14px;
-    color: #373737;
-    font-weight: 600;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    line-height: 1.5;
-}
-
-#small_banner .btn {
-    font-size: 12px;
-    padding: 15px 30px;
-    margin: 5px;
-}
-
-#small_banner .btn:hover {
-    background: #383838;
-    color: #fff;
-}
-
-#small_banner .btn.active {
-    background: #383838;
-    color: #fff;
-}
-
-/*===========================
-        How Work CSS Start
-============================*/
-
-#how_work {
-    padding: 120px 0;
-}
-
-
-#how_work .features_item {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-#how_work .features_icon {
-    transform: rotate(-45deg);
-    font-size: 28px;
-    height: 70px;
-    width: 70px;
-    line-height: 70px;
-    text-align: center;
-    color: #fff;
-    background: #279bc4;
-    border-radius: 10px;
-}
-
-#how_work .features_icon i {
-    transform: rotate(45deg);
-    background: none;
-}
-
-#how_work .inner_title h4 {
-    margin-bottom: 0;
-    padding-bottom: 15px;
-}
-
-#how_work .inner_title h4:after {
-    content: none;
-}
-
-#how_work .inner_title h3 {
-    font-size: 24px;
-    font-weight: 600;
-    font-style: italic;
-    padding-bottom: 15px;
-}
-
-.how_work_img {
-    margin-top: 100px;
+    padding: 100px 0;
     position: relative;
+    z-index: 1;
 }
 
-.how_work_text {
+#client_section:after {
     position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: rgba(10, 136, 255, 0.7);
+    z-index: -1;
+}
+
+#client_section .section_title h2 {
+    color: #fff;
+}
+
+#client_section .section_title h4 {
+    padding-left: 0;
+    color: #fff;
+}
+
+#client_section .section_title h4:after {
+    left: -60px;
+    background: #fff;
+}
+
+
+#client_section .section_title h4:before {
+    position: absolute;
+    content: '';
+    right: -60px;
     top: 50%;
-    right: 200px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 1px;
+    background: #fff;
 }
 
-.how_work_text h4 {
-    font-size: 16px;
+.client_item {
+    margin-top: 50px;
+    padding: 50px;
+    background: #fff;
+}
+
+.client_item .img,
+.client_item .text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.client_item .img i {
+    position: absolute;
+    right: 0;
+    bottom: 0;
     color: #fff;
-    background: #675ab3;
-    padding: 15px 20px;
-    margin-bottom: 10px;
+    background: #0a88ff;
+    font: 16px;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.client_item .img {
     position: relative;
 }
 
-/*
-.how_work_text h4:after {
-    position: absolute;
-    content: '';
-    border-width: 0;
-    border-style: solid;
-    border-color: #fff #fff #439fee #439fee;
-    right: 0;
-    top: 0;
-    z-index: 99;
+.client_item .img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
-*/
 
-.how_work_text h3 {
+.client_item .text {
+    padding-left: 20px;
+}
+
+.client_item .text h4 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.client_item .text h5 {
+    color: #5a5a66;
     font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+.client_item p {
+    padding-top: 15px;
+}
+
+@media screen and (max-width:575px) {
+    #client_section {
+        padding: 60px 0;
+    }
+}
+
+
+/* 9.-------------------------------------------
+                    News Section
+-----------------------------------------------*/
+
+#news_section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #f0f3f8;
+}
+
+.news_item {
+    margin-top: 50px;
+    box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.15);
+}
+
+.news_item .news_img {
+    position: relative;
+}
+
+.news_item .news_img {
+    position: relative;
+}
+
+.news_item .news_img a {
+    position: absolute;
+    bottom: -13px;
+    left: 20px;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-weight: 500;
+    text-transform: capitalize;
     color: #fff;
-    background: #1b9bc6;
-    padding: 12px 20px;
+    background: #0a88ff;
+}
+
+.news_item .text {
+    padding: 20px 20px 20px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.news_item .text h3 {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.news_item .text ul li {
+    padding-top: 15px;
     display: inline-block;
-    position: relative;
 }
 
-/*
-.how_work_text h3:after {
+.news_item .text ul li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.news_item .text ul li a {
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+.news_item .text ul li i {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width:575px) {
+    #news_section {
+        padding: 60px 0;
+    }
+}
+
+/* 10.-------------------------------------------
+                    Discuss Section
+-----------------------------------------------*/
+
+#discuss_section {
+    padding: 100px 0;
+}
+
+#discuss_section .section_title h4 {
+    padding-left: 0;
+}
+
+#discuss_section .section_title h4:after {
+    left: -60px;
+}
+
+
+#discuss_section .section_title h4:before {
     position: absolute;
     content: '';
-    border-width: 0;
-    border-style: solid;
-    border-color: #000 #000 #000 #000;
-    right: 0;
-    top: 0;
-    z-index: 99;
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 1px;
+    background: #0a88ff;
 }
-*/
 
-/*=====================================================
-                    Services Page CSS Start
-======================================================*/
+.discuss_box {
+    margin-top: 40px;
+    padding: 40px 30px 40px 65px;
+    box-shadow: 0px 6px 38px rgba(0, 0, 0, 0.09);
+}
+
+.discuss_box .icon {
+    position: absolute;
+    left: 40px;
+    top: 85px;
+}
+
+.discuss_box .icon i {
+    font-size: 30px;
+    color: #2383da
+}
+
+.discuss_box p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.contact_form {
+    box-shadow: 0px 15px 40px 0px rgba(0, 0, 0, 0.08);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 50px 50px 50px 50px;
+}
+
+.contact_form .form-control {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #F7FBFF;
+    margin: 0px 0px 30px 0px;
+    padding: 15px 15px 15px 20px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+textarea {
+    height: 130px;
+}
+
+button {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: -15px 0px -20px 0px;
+    padding: 12px 40px 12px 40px;
+    border: 0;
+    background: #2383da;
+    cursor: pointer;
+}
+
+@media screen and (max-width:575px) {
+    #discuss_section {
+        padding: 60px 0;
+    }
+
+    .contact_form {
+        padding: 40px 30px;
+    }
+}
 
 
-/*=====================================================
-                    Services Page CSS Start
-======================================================*/
+/* 11.-------------------------------------------
+                    Footer Section
+-----------------------------------------------*/
 
-/*=====================================================
-                    Services Page CSS Start
-======================================================*/
+footer {
+    background: #222629;
+}
+
+.footer_top {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #383c3f
+}
+
+.footer_box {
+    padding-top: 40px;
+}
+
+.footer_box h3 {
+    text-transform: capitalize;
+    font-size: 24px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.footer_box ul li {
+    color: #a7a8aa;
+}
+
+.footer_box ul li span {
+    text-transform: capitalize;
+}
+
+.footer_box ul li a {
+    color: #a7a8aa;
+    margin-bottom: 5px;
+}
+
+.footer_box ul li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:575px) {
+    footer {
+        overflow: hidden;
+    }
+
+    .footer_top {
+        padding: 20px 0;
+    }
+}
+
+
+/* 12.-------------------------------------------
+                    Banner Section
+-----------------------------------------------*/
+/* 13.-------------------------------------------
+                    Banner Section
+-----------------------------------------------*/
