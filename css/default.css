@@ -4,57 +4,65 @@
 
 
 
-.section_title h2 {
-    color: #121212;
-    font-size: 48px;
-    font-weight: 100;
+.section_title h1 {
+    font-size: 60px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    color: #333;
     text-transform: capitalize;
-    font-family: 'Raleway', sans-serif;
-
+    line-height: 1.1;
+    margin-bottom: 30px;
 }
 
-.section_title h2 span {
-    color: #2c78b9;
-   font-weight: 800;
-
+.section_title h2 {
+    font-size: 42px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    color: #333;
+    text-transform: capitalize;
+    line-height: 1.3;
 }
 
 .section_title h4 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #555555;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: capitalize;
-}
-
-.section_title img {
-   padding: 25px 0 35px;
-}
-
-
-.inner_title h4 {
+    color: #0a88ff;
     font-size: 16px;
-    font-weight: 500;
-    color: #555555;
-    font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
-    padding-bottom: 25px;
-    margin-bottom: 25px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    line-height: 1;
     display: inline-block;
+    margin-bottom: 20px;
+    padding-left: 60px;
     position: relative;
 }
 
-.inner_title h4:after {
+.section_title h4:after {
     position: absolute;
     content: '';
-    width: 70px;
-    height: 2px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #2c78b9;
-    
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 1px;
+    background: #0a88ff;
 }
+
+@media screen and (min-width:300px) and (max-width:575px) {
+    
+    .section_title h2 {
+        font-size: 32px;
+        font-family: 'Barlow', sans-serif;
+        font-weight: 700;
+        color: #333;
+        text-transform: capitalize;
+        line-height: 1.3;
+    }
+
+    .section_title h4 {
+        font-size: 14px;
+    }
+}
+
 
 /*===============================
             Scroll Top
@@ -1018,4 +1026,79 @@
 
 .pl-150 {
     padding-left: 150px
+}
+
+/*=====================================
+            Background Color
+=====================================*/
+
+.gray-bg {
+    background: #f6f6f6;
+}
+
+.white-bg {
+    background: #fff;
+}
+
+.black-bg {
+    background: #222;
+}
+
+/*==========================
+            Color
+============================*/
+
+.white {
+    color: #fff;
+}
+
+.black {
+    color: #222;
+}
+
+/*=====================================
+            Black Overlay
+=====================================*/
+
+[data-overlay] {
+    position: relative;
+}
+
+[data-overlay]::before {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+[data-overlay="3"]::before {
+    opacity: 0.3;
+}
+
+[data-overlay="4"]::before {
+    opacity: 0.4;
+}
+
+[data-overlay="5"]::before {
+    opacity: 0.5;
+}
+
+[data-overlay="6"]::before {
+    opacity: 0.6;
+}
+
+[data-overlay="7"]::before {
+    opacity: 0.7;
+}
+
+[data-overlay="8"]::before {
+    opacity: 0.8;
+}
+
+[data-overlay="9"]::before {
+    opacity: 0.9;
 }
